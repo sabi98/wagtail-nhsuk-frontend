@@ -49,3 +49,11 @@ class InsetTextBlock(RichTextBlock):
 
     class Meta:
         template = 'wagtailnhsukfrontend/inset_text.html'
+
+
+class HintTextBlock(StructBlock):
+
+    hint_text = CharBlock(label="Hint Text", required=True)
+
+    class Meta:
+        template = 'wagtailnhsukfrontend/hint_text.html'
